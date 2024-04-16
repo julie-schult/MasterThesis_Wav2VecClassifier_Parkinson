@@ -8,4 +8,4 @@ This git repository contains all source code written By Julie E. Schult & Laura 
 
 ## Files overview
 * [preprocessing](preprocessing/) is a folder containing all files needed for preprocessing.
-* *[padding.py](preprocessing/padding.py) is a python file containing padding. 
+  * [padding.py](preprocessing/padding.py) is a python file containing padding. 
