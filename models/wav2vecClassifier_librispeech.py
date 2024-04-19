@@ -6,7 +6,7 @@ import torch
 import torch.nn as nn
 import torch.optim as optim
 import matplotlib.pyplot as plt
-from transformers import Wav2Vec2FeatureExtractor, Wav2Vec2Processor
+from transformers import Wav2Vec2Model
 import seaborn as sns
 from sklearn.metrics import confusion_matrix
 
@@ -15,28 +15,26 @@ sys.path.append(os.path.abspath('../helpfunctions'))
 from mergesplits import mergesplits
 from saveweights import save_model
 
-class Wav2Vec2Classifier(nn.Module):
+class Wav2Vec2Classifier_librispeech(nn.Module):
     # INITIALIZE
     def __init__(self):
         super().__init__()
-        self.processor = Wav2Vec2Processor.from_pretrained("jonatasgrosman/wav2vec2-large-xlsr-53-spanish") #converting tensor to a way to compute in model
-        self.feature = Wav2Vec2FeatureExtractor.from_pretrained("jonatasgrosman/wav2vec2-large-xlsr-53-spanish", sampling_rate=16000)
+        self.model = Wav2Vec2Model.from_pretrained("facebook/wav2vec2-base-960h")
+        self.feature_extractor = self.model.feature_extractor
 
-        self.conv1 = nn.Conv1d(1, 64, kernel_size=3)
+        self.conv1 = nn.Conv1d(512, 64, kernel_size=3)
         self.flatten = nn.Flatten()
         self.dropout = nn.Dropout(p=0.3)
-        self.fc1 = nn.Linear(5119936, 1) #(16x5119936 and 2559968x1)
+        self.fc1 = nn.Linear(15872, 1) #(8x15872 and 5119936x1)
         self.bn1 = nn.BatchNorm1d(1)
         self.bn32 = nn.BatchNorm1d(32)
         self.bn64 = nn.BatchNorm1d(64)
         self.relu = nn.ReLU()
         self.pooling = nn.MaxPool1d(kernel_size=2, stride=2, padding=0)
 
-    # FORWARD PASS
+    # FORWARD PASSSß
     def forward(self, input_values):
-        x = self.processor(input_values, sampling_rate=16000, return_tensors='pt').input_values.squeeze(0)
-        x = self.feature(x, sampling_rate=16000)
-        x = torch.Tensor(x.input_values).squeeze(0).unsqueeze(1)
+        x = self.feature_extractor(input_values)
         
         x = self.conv1(x)
         x = self.bn64(x)
@@ -117,13 +115,13 @@ class Wav2Vec2Classifier(nn.Module):
         plt.savefig(file)
         plt.close()
 
-        # save data as csv
         training_data = pd.DataFrame({'epoch': epochs, 'training_loss': all_train_loss, 'validation_loss': all_val_loss, 'validation_accuracy': all_val_acc})
         file = os.path.join(results_folder, f'fit_results_fold_{k}.csv')
         training_data.to_csv(file, index=False)
                 
     # TEST FOR K FOLDS
     def test(self, test_dataloader, weights_folder, results_folder, test_id, k, max_epochs):
+        device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
         epochs = []
         accuracies = []
@@ -139,6 +137,7 @@ class Wav2Vec2Classifier(nn.Module):
             checkpoint = torch.load(weight_path)
             self.load_state_dict(checkpoint['model_state_dict'])
             self.eval()
+            
     
             all_predictions = []
             all_labels = []
