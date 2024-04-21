@@ -282,6 +282,6 @@ class Wav2Vec2Classifier_librispeech(nn.Module):
         ax.set_title(f'Confusion Matrix')
         ax.xaxis.set_ticklabels(['HC', 'PD'])
         ax.yaxis.set_ticklabels(['HC', 'PD'])
-        plt.plot()
+        plt.show()
 
         return classifications
