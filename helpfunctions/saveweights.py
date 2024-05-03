@@ -4,10 +4,10 @@ import os
 
 BUCKET = "./weights" 
 
-def save_model(name, model, optimizer, epoch, val):
-    folder = os.path.join(BUCKET, name)
+def save_model(folder, model, optimizer, epoch, val, k):
+    folder = os.path.join(BUCKET, folder)
     if not os.path.exists(folder): os.makedirs(folder)
-    file = os.path.join(folder, f'epoch_{epoch+1}.pt')
+    file = os.path.join(folder, f'fold_{fold}_epoch_{epoch+1}.pt')
     #file = BUCKET + "{}/epoch_{}.pt".format(name,epoch+1)
     torch.save({
             'epoch': epoch+1,
