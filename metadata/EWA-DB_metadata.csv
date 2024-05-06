@@ -1,0 +1,180 @@
+id,age,coffee,diagnosis,education_years,family,inclusive_criteria,moca,sex,smoking,wais
+611xpfbe01,50,Yes,Healthy,16,no occurrence,True,29,female,Never.,0
+611xqj2u01,44,Yes,Healthy,17,no occurrence,True,27,male,Never.,2
+665u2txj01,65,"Yes, but less than 3 cups of coffee per week (6 cups of black tea)",Healthy,13,no occurrence,True,30,female,Never.,2
+665u2z6601,76,Yes,Healthy,12,AD,True,27,female,Never.,0
+665u45lj01,74,Yes,Healthy,13,no occurrence,True,26,female,Never.,0
+665u7qyz01,76,Yes,Healthy,17,no occurrence,True,29,female,Never.,1
+665u809001,64,Yes,Healthy,20,no occurrence,True,30,female,Never.,1
+665ucwpp01,74,Yes,Healthy,19,no occurrence,True,27,female,Never.,1
+665udebf01,65,Yes,Healthy,18,AD,True,29,female,I currently smoke,5
+665ue89t01,74,Yes,Healthy,12,no occurrence,True,30,female,Never.,0
+665ugmpn01,54,Yes,Healthy,13,no occurrence,True,29,female,Never.,0
+665ui7xb01,78,Yes,Healthy,19,no occurrence,True,28,female,Never.,2
+665ukcq201,69,Yes,Healthy,13,no occurrence,True,27,female,"I don't smoke now, but I used to in the past. (At least 1 pack year in total).",2
+665undn501,55,Yes,Healthy,12,no occurrence,True,30,female,I currently smoke,0
+665up78h01,83,Yes,Healthy,20,no occurrence,True,26,male,Never.,3
+665ur02801,65,Yes,Healthy,22,no occurrence,True,28,female,Never.,2
+b2yubczy01,54,Yes,Healthy,16,no occurrence,True,27,male,I currently smoke,0
+b2yuhnvl01,71,Yes,Healthy,16,no occurrence,True,26,male,Never.,1
+b2yumwyv01,59,Yes,Healthy,14,no occurrence,True,28,female,Never.,3
+b2yupuh601,64,Yes,Healthy,12,no occurrence,True,28,male,Never.,9
+b2yuto4l01,58,Yes,Healthy,13,AD,True,28,male,"I don't smoke now, but I used to in the past. (At least 1 pack year in total).",7
+b2yux3m001,66,No,Healthy,18,no occurrence,True,27,male,Never.,2
+c8ij11da01,60,Yes,Healthy,13,no occurrence,True,27,male,Never.,5
+c8ij26xr01,61,Yes,Healthy,18,PD,True,28,female,Never.,4
+c8ij5jxg01,80,Yes,Healthy,12,no occurrence,True,26,female,Never.,1
+c8ij7b8h01,66,No,Healthy,12,no occurrence,True,26,male,I currently smoke,1
+c8ij8z4w01,55,Yes,Healthy,11,no occurrence,True,26,female,I currently smoke,2
+c8ijb8sd01,61,Yes,Healthy,12,no occurrence,True,27,female,Never.,3
+c8ijbwo401,61,Yes,Healthy,12,AD,True,29,female,Never.,5
+c8ijdcom01,57,Yes,Healthy,13,no occurrence,True,27,female,Never.,0
+c8ijekat01,56,Yes,Healthy,14,PD,True,28,female,"I don't smoke now, but I used to in the past. (At least 1 pack year in total).",7
+c8ijf5eq01,57,Yes,Healthy,13,AD,True,26,female,"I don't smoke now, but I used to in the past. (At least 1 pack year in total).",2
+c8ijgydn01,56,Yes,Healthy,13,PD,True,26,female,Never.,12
+c8ijgzmf01,57,Yes,Healthy,13,no occurrence,True,27,female,I currently smoke,2
+c8ijhkak01,73,Yes,Healthy,19,no occurrence,True,26,male,Never.,1
+c8ijj47w01,55,Yes,Healthy,19,no occurrence,True,26,female,Never.,2
+c8ijjhon01,65,Yes,Healthy,11,no occurrence,False,25,female,"I don't smoke now, but I used to in the past. (At least 1 pack year in total).",3
+c8ijjxhz01,65,Yes,Healthy,12,no occurrence,True,27,male,"I don't smoke now, but I used to in the past. (At least 1 pack year in total).",2
+c8ijlk2r01,84,Yes,Healthy,5,no occurrence,True,27,female,Never.,2
+c8ijndh201,64,Yes,Healthy,12,no occurrence,True,29,male,"I don't smoke now, but I used to in the past. (At least 1 pack year in total).",1
+c8ijojqq01,65,Yes,Healthy,11,no occurrence,True,26,female,"I don't smoke now, but I used to in the past. (At least 1 pack year in total).",0
+c8ijp80501,55,Yes,Healthy,12,PD,True,28,male,Never.,0
+c8ijv96y01,58,Yes,Healthy,11,no occurrence,True,28,male,Never.,0
+c8ijvbip01,57,Yes,Healthy,13,no occurrence,True,27,female,"I don't smoke now, but I used to in the past. (At least 1 pack year in total).",3
+c8ijvj5q01,61,Yes,Healthy,12,no occurrence,True,26,female,"I don't smoke now, but I used to in the past. (At least 1 pack year in total).",2
+c8ijw5ow01,81,Yes,Healthy,8,no occurrence,False,25,female,Never.,3
+c8ijw6wy01,68,Yes,Healthy,16,no occurrence,True,26,female,"I don't smoke now, but I used to in the past. (At least 1 pack year in total).",3
+c8ijxth101,61,Yes,Healthy,12,no occurrence,True,27,female,"I don't smoke now, but I used to in the past. (At least 1 pack year in total).",2
+c8ijy50001,56,Yes,Healthy,14,no occurrence,True,27,male,Never.,7
+c8ijynzy01,56,Yes,Healthy,12,no occurrence,True,28,female,"I don't smoke now, but I used to in the past. (At least 1 pack year in total).",0
+c8ijzbj501,60,Yes,Healthy,13,no occurrence,True,28,female,Never.,4
+d1aj0qtu01,61,Yes,Healthy,21,no occurrence,True,28,male,Never.,0
+d1aj1gcd01,61,Yes,Healthy,14,no occurrence,True,29,female,"I don't smoke now, but I used to in the past. (At least 1 pack year in total).",0
+d1aj3td201,63,Yes,Healthy,18,no occurrence,True,30,female,Never.,4
+d1aj5bfq01,54,Yes,Healthy,14,no occurrence,True,29,female,I currently smoke,2
+d1ajb2sv01,65,Yes,Healthy,17,no occurrence,True,28,male,Never.,4
+d1aje68c01,73,No,Healthy,19,no occurrence,False,24,female,Never.,0
+d1ajet8o01,64,Yes,Healthy,18,no occurrence,True,27,female,Never.,4
+d1ajgf7c01,70,Yes,Healthy,17,no occurrence,False,24,male,I currently smoke,0
+d1ajkbd001,69,Yes,Healthy,16,no occurrence,True,28,female,Never.,5
+d1ajmse201,74,Yes,Healthy,14,no occurrence,True,26,female,"I don't smoke now, but I used to in the past. (At least 1 pack year in total).",4
+d1ajq7jd01,69,Yes,Healthy,18,no occurrence,True,28,female,I currently smoke,3
+d1ajqoey01,61,Yes,Healthy,18,no occurrence,True,27,female,"I don't smoke now, but I used to in the past. (At least 1 pack year in total).",13
+d1ajwuoa01,74,Yes,Healthy,14,no occurrence,False,25,male,I currently smoke,6
+d1ajzikm01,72,Yes,Healthy,18,no occurrence,False,24,male,Never.,4
+fgl9e0yp01,85,No,Healthy,13,AD,True,26,male,I currently smoke,0
+fgl9h5tc01,66,Yes,Healthy,15,no occurrence,True,27,male,"I don't smoke now, but I used to in the past. (At least 1 pack year in total).",5
+fgl9ha4l01,90,Yes,Healthy,13,no occurrence,True,29,male,"I don't smoke now, but I used to in the past. (At least 1 pack year in total).",4
+fgl9xcdh01,57,Yes,Healthy,14,no occurrence,True,28,male,Never.,2
+fgl9z8z701,83,"Yes, but less than 3 cups of coffee per week (6 cups of black tea)",Healthy,9,no occurrence,False,24,male,"I don't smoke now, but I used to in the past. (At least 1 pack year in total).",3
+frvb15ge01,80,Yes,Healthy,18,no occurrence,False,25,male,"I don't smoke now, but I used to in the past. (At least 1 pack year in total).",1
+frvb4esm01,57,Yes,Healthy,12,no occurrence,True,28,male,Never.,3
+frvb4nij01,72,Yes,Healthy,13,no occurrence,True,26,male,"I don't smoke now, but I used to in the past. (At least 1 pack year in total).",6
+frvb5pmg01,71,Yes,Healthy,18,AD,True,29,male,Never.,0
+frvbabci01,70,Yes,Healthy,17,no occurrence,True,28,male,"I don't smoke now, but I used to in the past. (At least 1 pack year in total).",3
+frvbaz5801,57,Yes,Healthy,17,no occurrence,True,27,male,Never.,0
+frvbcya001,74,No,Healthy,15,no occurrence,False,24,male,Never.,5
+frvbn0ib01,61,Yes,Healthy,13,no occurrence,False,24,male,"I don't smoke now, but I used to in the past. (At least 1 pack year in total).",2
+frvbosl601,67,Yes,Healthy,19,no occurrence,True,28,male,Never.,2
+frvbsx6401,64,Yes,Healthy,18,no occurrence,True,29,male,Never.,1
+frvbu7hz01,70,Yes,Healthy,15,no occurrence,True,27,male,Never.,1
+frvbzfjm01,73,Yes,Healthy,20,no occurrence,False,24,male,"I don't smoke now, but I used to in the past. (At least 1 pack year in total).",0
+i4rtha9q01,66,Yes,Healthy,18,no occurrence,True,30,male,Never.,4
+ji6qhwvn01,68,Yes,Healthy,15,no occurrence,True,26,male,"I don't smoke now, but I used to in the past. (At least 1 pack year in total).",3
+ji6qnia901,53,Yes,Healthy,14,no occurrence,True,27,male,Never.,2
+kixj1oxp01,63,Yes,Healthy,18,no occurrence,True,29,male,"I don't smoke now, but I used to in the past. (At least 1 pack year in total).",0
+kixj1r4y01,63,Yes,Healthy,19,no occurrence,True,28,male,I currently smoke,2
+kixj3wvg01,52,No,Healthy,13,AD,False,25,male,Never.,1
+kixj4kwf01,77,Yes,Healthy,12,AD,False,25,male,Never.,1
+kixj56vy01,71,No,Healthy,21,no occurrence,True,27,male,Never.,4
+alwk77p701,70,No,Parkinson,14,no occurrence,True,25,male,Never.,0
+d1aj7oyo01,56,Yes,Parkinson,16,PD,True,27,male,I currently smoke,2
+d1aj9s0h01,55,Yes,Parkinson,17,no occurrence,True,27,male,"I don't smoke now, but I used to in the past. (At least 1 pack year in total).",0
+d1ajb8zb01,66,Yes,Parkinson,13,PD,True,24,female,Never.,1
+fgl9fz7501,83,Yes,Parkinson,12,PD,True,24,female,Never.,0
+gautrihs01,80,Yes,Parkinson,8,no occurrence,True,25,female,Never.,9
+i4rtlbrs01,89,No,Parkinson,13,no occurrence,True,20,female,Never.,7
+i4rtptr501,88,"Yes, but less than 3 cups of coffee per week (6 cups of black tea)",Parkinson,13,no occurrence,False,9,female,Never.,4
+i4rttuse01,91,"Yes, but less than 3 cups of coffee per week (6 cups of black tea)",Parkinson,18,no occurrence,True,20,male,Never.,1
+kixj1huf01,62,"Yes, but less than 3 cups of coffee per week (6 cups of black tea)",Parkinson,20,no occurrence,True,29,male,"I don't smoke now, but I used to in the past. (At least 1 pack year in total).",0
+kixjd0bc01,67,No,Parkinson,14,no occurrence,True,22,male,I currently smoke,4
+lj2v9a9r01,63,Yes,Parkinson,13,no occurrence,True,23,male,Never.,0
+o2kgkx6901,80,Yes,Parkinson,12,PD,True,22,female,Never.,3
+o2kgzthq01,72,Yes,Parkinson,17,no occurrence,True,23,male,Never.,0
+s9cq7cji01,71,Yes,Parkinson,13,PD,True,27,male,"I don't smoke now, but I used to in the past. (At least 1 pack year in total).",4
+s9cqfgwi01,84,Yes,Parkinson,17,no occurrence,True,26,male,"I don't smoke now, but I used to in the past. (At least 1 pack year in total).",0
+s9cqonjv01,70,Yes,Parkinson,17,no occurrence,True,24,male,Never.,3
+s9cqss4a01,63,"Yes, but less than 3 cups of coffee per week (6 cups of black tea)",Parkinson,12,no occurrence,True,27,male,I currently smoke,5
+sfpqhw7k01,83,Yes,Parkinson,16,no occurrence,True,20,female,Never.,3
+sfpqle6101,83,"Yes, but less than 3 cups of coffee per week (6 cups of black tea)",Parkinson,20,AD,True,22,male,"I don't smoke now, but I used to in the past. (At least 1 pack year in total).",10
+sfpqnwqv01,84,No,Parkinson,11,no occurrence,True,21,female,Never.,1
+tbc515xd01,79,Yes,Parkinson,12,no occurrence,True,29,male,"I don't smoke now, but I used to in the past. (At least 1 pack year in total).",9
+tbc51fid01,66,Yes,Parkinson,28,no occurrence,True,26,male,Never.,2
+tbc51rtj01,69,Yes,Parkinson,13,AD,True,27,female,I currently smoke,1
+tbc53fwu01,70,"Yes, but less than 3 cups of coffee per week (6 cups of black tea)",Parkinson,13,no occurrence,True,27,female,I currently smoke,3
+tbc53mzt01,66,Yes,Parkinson,18,no occurrence,True,30,female,Never.,1
+tbc551k601,75,Yes,Parkinson,19,no occurrence,True,23,male,Never.,0
+tbc5615601,56,"Yes, but less than 3 cups of coffee per week (6 cups of black tea)",Parkinson,13,no occurrence,True,26,female,"I don't smoke now, but I used to in the past. (At least 1 pack year in total).",0
+tbc570ey01,76,Yes,Parkinson,12,no occurrence,True,26,female,"I don't smoke now, but I used to in the past. (At least 1 pack year in total).",7
+tbc57al401,70,Yes,Parkinson,13,no occurrence,True,27,female,Never.,1
+tbc57wmh01,70,No,Parkinson,13,no occurrence,True,20,male,Never.,5
+tbc5903u01,64,No,Parkinson,18,no occurrence,True,22,male,Never.,2
+tbc59a3j01,72,Yes,Parkinson,12,no occurrence,True,27,female,Never.,4
+tbc5ajat01,68,Yes,Parkinson,12,PD,True,24,male,"I don't smoke now, but I used to in the past. (At least 1 pack year in total).",2
+tbc5bu2q01,67,Yes,Parkinson,18,no occurrence,True,28,male,Never.,1
+tbc5dgjb01,71,Yes,Parkinson,14,no occurrence,True,29,female,Never.,3
+tbc5es0q01,55,No,Parkinson,12,no occurrence,True,29,male,"I don't smoke now, but I used to in the past. (At least 1 pack year in total).",12
+tbc5es9b01,68,Yes,Parkinson,13,no occurrence,True,29,male,Never.,0
+tbc5gm5s01,53,No,Parkinson,12,PD,True,25,male,Never.,11
+tbc5ht7j01,85,No,Parkinson,19,PD,True,21,male,Never.,2
+tbc5kai901,78,No,Parkinson,10,ADPD,True,25,female,Never.,4
+tbc5klt201,57,No,Parkinson,12,no occurrence,True,27,female,Never.,3
+tbc5kqw401,66,Yes,Parkinson,20,no occurrence,True,24,male,"I don't smoke now, but I used to in the past. (At least 1 pack year in total).",0
+tbc5kux501,50,Yes,Parkinson,12,no occurrence,True,28,female,Never.,9
+tbc5l4be01,65,Yes,Parkinson,17,no occurrence,True,27,male,"I don't smoke now, but I used to in the past. (At least 1 pack year in total).",0
+tbc5l7ki01,56,Yes,Parkinson,12,no occurrence,True,29,male,Never.,3
+tbc5l9dx01,70,"Yes, but less than 3 cups of coffee per week (6 cups of black tea)",Parkinson,17,no occurrence,True,26,male,"I don't smoke now, but I used to in the past. (At least 1 pack year in total).",1
+tbc5lkai01,66,Yes,Parkinson,18,no occurrence,True,29,female,Never.,3
+tbc5o2yq01,68,Yes,Parkinson,18,no occurrence,True,27,female,Never.,2
+tbc5oylg01,74,Yes,Parkinson,15,no occurrence,True,24,male,Never.,6
+tbc5pgpi01,78,"Yes, but less than 3 cups of coffee per week (6 cups of black tea)",Parkinson,15,no occurrence,True,29,female,Never.,7
+tbc5psfx01,63,Yes,Parkinson,12,no occurrence,True,28,male,"I don't smoke now, but I used to in the past. (At least 1 pack year in total).",3
+tbc5q3u101,60,Yes,Parkinson,12,no occurrence,True,26,male,I currently smoke,9
+tbc5q8dv01,51,"Yes, but less than 3 cups of coffee per week (6 cups of black tea)",Parkinson,12,no occurrence,True,28,male,Never.,7
+tbc5qqyr01,70,Yes,Parkinson,12,no occurrence,True,26,male,Never.,0
+tbc5r6tp01,73,Yes,Parkinson,13,no occurrence,True,24,male,I currently smoke,7
+tbc5ryf701,76,Yes,Parkinson,13,no occurrence,True,27,female,Never.,5
+tbc5sonu01,55,Yes,Parkinson,12,no occurrence,True,26,male,"I don't smoke now, but I used to in the past. (At least 1 pack year in total).",6
+tbc5taig01,70,"Yes, but less than 3 cups of coffee per week (6 cups of black tea)",Parkinson,12,AD,True,25,male,Never.,5
+tbc5thw001,68,Yes,Parkinson,13,no occurrence,True,26,male,"I don't smoke now, but I used to in the past. (At least 1 pack year in total).",3
+tbc5u9nr01,86,No,Parkinson,9,no occurrence,True,26,female,Never.,1
+tbc5xvde01,74,"Yes, but less than 3 cups of coffee per week (6 cups of black tea)",Parkinson,17,no occurrence,True,25,male,Never.,4
+tbc5y24h01,70,"Yes, but less than 3 cups of coffee per week (6 cups of black tea)",Parkinson,12,PD,True,26,male,"I don't smoke now, but I used to in the past. (At least 1 pack year in total).",7
+tbc5yb0k01,81,Yes,Parkinson,9,no occurrence,True,28,female,Never.,0
+tbc5zcus01,67,Yes,Parkinson,13,no occurrence,True,28,female,"I don't smoke now, but I used to in the past. (At least 1 pack year in total).",3
+u1un0yi101,70,"Yes, but less than 3 cups of coffee per week (6 cups of black tea)",Parkinson,18,no occurrence,True,25,male,"I don't smoke now, but I used to in the past. (At least 1 pack year in total).",2
+u1und5jx01,61,"Yes, but less than 3 cups of coffee per week (6 cups of black tea)",Parkinson,13,no occurrence,True,26,male,Never.,1
+u1uniqcz01,78,Yes,Parkinson,16,no occurrence,True,27,female,"I don't smoke now, but I used to in the past. (At least 1 pack year in total).",0
+u1unjvvw01,69,"Yes, but less than 3 cups of coffee per week (6 cups of black tea)",Parkinson,13,no occurrence,True,22,male,Never.,6
+u1unkmy101,80,Yes,Parkinson,17,no occurrence,True,22,female,Never.,1
+u1unoo4g01,57,No,Parkinson,16,no occurrence,True,30,male,Never.,0
+u1untjuc01,73,No,Parkinson,13,no occurrence,True,23,male,Never.,1
+u1unuqot01,78,"Yes, but less than 3 cups of coffee per week (6 cups of black tea)",Parkinson,16,no occurrence,True,29,male,Never.,0
+u1unv52201,72,Yes,Parkinson,13,PD,True,28,male,Never.,0
+uw4zeo1h01,60,"Yes, but less than 3 cups of coffee per week (6 cups of black tea)",Parkinson,18,no occurrence,True,28,male,I currently smoke,3
+uw4zgqt001,74,No,Parkinson,14,no occurrence,True,26,female,Never.,0
+wsnb1vds01,65,"Yes, but less than 3 cups of coffee per week (6 cups of black tea)",Parkinson,13,no occurrence,False,19,female,Never.,2
+wsnb6g5w01,74,No,Parkinson,23,no occurrence,True,22,female,Never.,4
+wsnb7x3e01,70,No,Parkinson,17,no occurrence,True,30,male,Never.,4
+wsnba93901,59,No,Parkinson,12,no occurrence,True,25,male,"I don't smoke now, but I used to in the past. (At least 1 pack year in total).",1
+wsnbcnuc01,61,No,Parkinson,12,no occurrence,True,26,female,Never.,1
+wsnbcqjk01,69,No,Parkinson,18,no occurrence,True,27,male,Never.,4
+wsnbegjd01,52,"Yes, but less than 3 cups of coffee per week (6 cups of black tea)",Parkinson,19,no occurrence,True,27,male,I currently smoke,3
+wsnbepgp01,54,Yes,Parkinson,19,PD,True,30,female,Never.,4
+wsnbo4hi01,61,No,Parkinson,18,no occurrence,True,26,female,I currently smoke,0
+wsnbov1e01,82,Yes,Parkinson,14,PD,True,23,female,Never.,4
+wsnbr5vb01,64,Yes,Parkinson,18,PD,True,26,female,Never.,4
+wsnbxvf401,69,Yes,Parkinson,18,no occurrence,True,21,male,I currently smoke,3
+ysw962l801,65,No,Parkinson,18,no occurrence,True,27,male,Never.,0
