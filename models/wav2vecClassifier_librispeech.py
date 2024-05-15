@@ -25,14 +25,16 @@ class Wav2Vec2Classifier_librispeech(nn.Module):
         self.conv1 = nn.Conv1d(512, 64, kernel_size=3)
         self.flatten = nn.Flatten()
         self.dropout = nn.Dropout(p=0.3)
-        self.fc1 = nn.Linear(15872, 1) #(8x15872 and 5119936x1)
+        self.fc1 = nn.Linear(3072, 1) 
+        # (8x15872) all 10s
+        # (16x3072) ddk 2s
         self.bn1 = nn.BatchNorm1d(1)
         self.bn32 = nn.BatchNorm1d(32)
         self.bn64 = nn.BatchNorm1d(64)
         self.relu = nn.ReLU()
         self.pooling = nn.MaxPool1d(kernel_size=2, stride=2, padding=0)
 
-    # FORWARD PASSSß
+    # FORWARD PASS
     def forward(self, input_values):
         x = self.feature_extractor(input_values)
         
@@ -218,7 +220,7 @@ class Wav2Vec2Classifier_librispeech(nn.Module):
         test_results.to_csv(file, index=False)
 
     # TESTING ONLY ONE SET OF WEIGHTS
-    def test2(self, test_dataloader, weight_path, test_id):
+    def test2(self, test_dataloader, weight_path, test_id, classifications_file, cm_file):
         
         checkpoint = torch.load(weight_path)
         self.load_state_dict(checkpoint['model_state_dict'])
@@ -257,6 +259,7 @@ class Wav2Vec2Classifier_librispeech(nn.Module):
             'predicted': path_preds,
             'label': path_labels
         })
+        classifications.to_csv(classifications_file, index=False)
     
         correct_path = sum(x == y for x, y in zip(path_labels, path_preds)) 
         accuracy_path = correct_path / len(path_labels)
@@ -282,6 +285,72 @@ class Wav2Vec2Classifier_librispeech(nn.Module):
         ax.set_title(f'Confusion Matrix')
         ax.xaxis.set_ticklabels(['HC', 'PD'])
         ax.yaxis.set_ticklabels(['HC', 'PD'])
-        plt.show()
+        f.savefig(cm_file, dpi=400)
+        plt.close(f)
 
-        return classifications
+    # TESTING ONLY ONE SET OF WEIGHTS AND WITHOUT IDS
+    def test3(self, test_dataloader, weight_path, classifications_file, cm_file):
+        
+        checkpoint = torch.load(weight_path)
+        self.load_state_dict(checkpoint['model_state_dict'])
+        self.eval()
+        
+        correct = 0
+        total = 0
+
+        all_predictions = []
+        all_labels = []
+        all_names = []
+        
+        for inputs, labels, names in test_dataloader:            
+            inputs = inputs.to(torch.float32)
+            outputs = self.forward(inputs)
+            probabilities = torch.sigmoid(outputs)
+            predicted = (probabilities > 0.5).int()
+
+            predicted = predicted.tolist()
+            predicted = [item for sublist in predicted for item in sublist]
+            label = labels.tolist()
+            label = [int(item[0]) for item in label]
+
+            all_labels.append(label)
+            all_predictions.append(predicted)
+            all_names.append(names)
+
+        all_predictions = [item for sublist in all_predictions for item in sublist]
+        all_labels = [item for sublist in all_labels for item in sublist]
+        all_names = [item for sublist in all_names for item in sublist]
+
+        paths, path_preds, path_labels = mergesplits2(all_names, all_predictions, all_labels)
+
+        classifications = pd.DataFrame({
+            'path': paths,
+            'predicted': path_preds,
+            'label': path_labels
+        })
+        classifications.to_csv(classifications_file, index=False)
+    
+        correct_path = sum(x == y for x, y in zip(path_labels, path_preds)) 
+        accuracy_path = correct_path / len(path_labels)
+
+        cm = confusion_matrix(path_labels, path_preds)
+        TN,FP, FN, TP = cm.ravel()
+        
+        sensitivity = TP / (TP + FN)
+        specificity = TN / (TN + FP)
+        precision = TP / (TP + FP)
+        recall = TP / (TP + FN)
+
+        print(f'Acuracy={accuracy_path}')
+        print(f'sensitivity={sensitivity:.3f}, specificity={specificity:.3f}, precision={precision:.3f}, recall={recall:.3f}')
+
+        f = plt.figure(figsize=(8,6))
+        ax= f.add_subplot()
+        sns.heatmap(cm, annot=True, fmt='g', ax=ax, cmap='Greens')
+        ax.set_xlabel('Predicted labels')
+        ax.set_ylabel('True labels')
+        ax.set_title(f'Confusion Matrix')
+        ax.xaxis.set_ticklabels(['HC', 'PD'])
+        ax.yaxis.set_ticklabels(['HC', 'PD'])
+        f.savefig(cm_file, dpi=400)
+        plt.close(f)
