@@ -17,4 +17,4 @@ This git repository contains all source code written By Julie E. Schult & Laura 
   * [mergesplits.py](helpfunctions/mergesplits.py) contains a function used in the testing. It sorts the data that gathers the split/augmented utterances that becomes one whole file. If at least ONE of the utterances are classified as "PD", the whole file is classified as "PD"
 * [models](models/) is a folder containing all wav2vec classifiers used. All models have the same architecture: Wav2Vec Feature extractor, convolution layer, batch norm, relu, maxpool, dropout, flatten, linear, batch norm, relu.
   * [wav2vecClassifier_commonvoice.py.py](models/wav2vecClassifier_commonvoice.py.py) contains a model class, where the Wav2Vec model is trained on the Common Voice dataset. 
-  * [Wav2Vec2Classifier_librispeech.py](models/Wav2Vec2Classifier_librispeech.py) contains a model class, where the Wav2Vec model is trained on Librispeech.
+  * [Wav2Vec2Classifier_librispeech.py](models/wav2vecClassifier_librispeech.py) contains a model class, where the Wav2Vec model is trained on Librispeech.
